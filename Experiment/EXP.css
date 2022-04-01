@@ -1,0 +1,238 @@
+@import "compass/css3";
+
+
+*{
+  margin: 0;padding: 0;
+}
+
+h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+a {
+	color: #3CF;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-heading h2:before {
+    width: 1px;
+    height: 100px;
+    background-color: rgba(250,250,250,0.1);
+    position: absolute;
+    top: -102px;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section-heading h2 {
+    margin-top: 100px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 2px solid rgba(250,250,250,0.1);
+}
+
+
+.container {
+  /* width: 40em; */
+  /* margin: 10px auto; */
+  padding-top: 100px;
+}
+
+.main-header {
+  background-color: rgba(62, 98, 163, 0.95);
+  height: 100px;
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  top: 0;
+}
+
+.main-header .logo {
+  float: left;
+  line-height: 80px;
+  padding-left: 60px;
+}
+
+.main-header .logo a {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+.main-header .logo a em {
+  font-style: normal;
+  color: #f5a425;
+}
+.main-header .logo img{
+
+width: 100px;
+}
+
+
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: .5em 1em;
+  margin-bottom: .5em;
+  display: block;
+  cursor: pointer;
+  background-color: whiteSmoke;
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-input:checked + label, .ac-label:hover {
+  background-color: #999;
+}
+
+.ac-label:after, .ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 2.25em;
+  text-align: center;
+  background-color: #e5e5e5;
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-label:hover:after, .ac-input:checked + .ac-label:after {
+  background-color: #b5b5b5;
+}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+
+
+.ac-text, .ac-sub-text {
+  opacity: 0;
+  height: 0;
+  margin-bottom: .5em;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text, .ac-sub .ac-input:checked ~ .ac-sub-text { 
+  opacity: 1;
+  height: auto;
+}
+
+
+
+.ac-sub .ac-label {
+  background: none;
+  font-weight: 600;
+  padding: .5em 2em;
+  margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+  background: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.ac-sub .ac-label:after, .ac-sub .ac-input:checked + .ac-label:after {
+  left: 0;
+  background: none;
+}
+
+.ac-sub .ac-input:checked + label, .ac-sub .ac-label:hover {
+  background: none;
+}
+
+.ac-sub-text {
+  padding: 0 1em 0 2em;
+}
+
+footer {
+  background-color: #152036;
+  text-align: center;
+}
+footer h3{
+color: #f5a425;
+}
+
+footer p {
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  color: rgb(238, 231, 231);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+footer p a,
+footer p a:hover {
+  color: #f5a425;
+}
+/* .quize{ 
+align-items:center;
+  background-color:black;
+  border-radius: 5px;
+  height: 22px;
+  width: 40px;
+
+}
+.quize link{
+  text-align: center;
+  color: black;
+} */
+.quize button{
+  padding: 10px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid black; 
+  transition-duration: 0.4s;
+}
+.quize button:hover{
+  background-color: red /* Green */
+  color: white;
+}
+
+
